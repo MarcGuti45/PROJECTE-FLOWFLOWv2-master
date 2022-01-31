@@ -1,0 +1,122 @@
+input[type="radio"]{
+    display: none;
+}
+
+.categorias {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.categorias label {
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer ;
+}
+
+.categorias label:hover {
+    opacity: 0.7;
+}
+
+[value="TODOS"]:checked ~ .productos .producto[data-category~="TODOS"]{
+    display: block;
+}
+
+
+[value="BARRITAS"]:checked ~ .productos .producto:not([data-category~="BARRITAS"]),
+[value="GALLETAS"]:checked ~ .productos .producto:not([data-category~="GALLETAS"]),
+[value="OTROS"]:checked ~ .productos .producto:not([data-category~="OTROS"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .categorias [for="TODOS"],
+[value="BARRITAS"]:checked ~ .categorias [for="BARRITAS"],
+[value="GALLETAS"]:checked ~ .categorias [for="GALLETAS"],
+[value="OTROS"]:checked ~ .categorias [for="OTROS"]{
+    background:#2999ad;
+    color: #fff;
+}
+
+#tituloRopa h1 {
+    font-weight: 100;
+    font-size: 45px;
+    float: left;
+    margin-left: 15px;
+}
+
+#tituloRopa p{
+    text-align: justify;
+    margin-left: 17px;
+    position: relative;
+    bottom: 25px;
+    width: 1200px;
+}
+
+.menu #a9{
+    background-color: rgb(230, 228, 228);
+    color: #2999ad;
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    width: 16.66666%;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#carroSnacks {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    left: 350px;
+    top: 20px;
+    padding: 10px;
+}
+#userSnacks {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    bottom: 125px;
+    right: 50px;
+    padding: 10px;
+}
+
+
+.total {
+    float: left;
+    position: relative;
+    
+}
+
+.shoopingCartTotal {
+    float: left;
+    position: relative;
+    left: 100px;
+}
+
+.addToCart {
+    width: 120px;
+    background: #2999ad;
+    border: none;
+    padding: 8px;
+    color: white;
+    margin: 4px 0;
+    font-size: 13px;
+    font-weight: bolder;
+    float: left;
+    border-radius: 4px;
+    margin-left: 65px;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52);
+}
+
+.addToCart:hover {
+    opacity: 0.7;
+}

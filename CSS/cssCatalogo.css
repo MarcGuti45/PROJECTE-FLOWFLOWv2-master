@@ -1,0 +1,64 @@
+.menu{
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    z-index: 100;
+}
+.menu #a1{
+    background-color: rgb(230, 228, 228);
+    color: #2999ad;
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    width: 16.66666%;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#nutricion {
+    color: white;
+    position: relative;
+    right: 505px;
+    bottom: 300px;
+    font-size: 55px;
+
+}
+
+#nutricion2 {
+    color: white;
+    position: relative;
+    right: 450px;
+    bottom: 330px;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+#carroSuple {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    left: 350px;
+    top: 20px;
+    padding: 10px;
+}
+#userSuple {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    bottom: 125px;
+    right: 50px;
+    padding: 10px;
+}
+
+#oferta {
+    transition: transform .2s; 
+}
+ 
+#oferta:hover {
+    transform: scale(1.1); 
+}
